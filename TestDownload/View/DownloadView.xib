@@ -81,6 +81,14 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="HoriView" destination="tOc-lp-hEJ" id="Iai-9J-vXb"/>
+                <outlet property="downloadLbl" destination="7Yn-3i-1la" id="7yk-aD-xZC"/>
+                <outlet property="pinView" destination="wWf-ZS-PXO" id="jLo-x5-Gda"/>
+                <outlet property="progressBar" destination="Jpb-m2-ndB" id="NoM-aJ-8mr"/>
+                <outlet property="progressLbl" destination="biN-yB-aCa" id="NJz-98-Wdx"/>
+                <outlet property="verticalView" destination="fTK-V5-Obk" id="y21-sz-WIa"/>
+            </connections>
             <point key="canvasLocation" x="103.62318840579711" y="62.276785714285708"/>
         </tableViewCell>
     </objects>

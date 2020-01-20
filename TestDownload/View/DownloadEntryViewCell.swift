@@ -6,20 +6,6 @@
 
 import UIKit
 
-class ExpandingTableViewCellContent {
-    var footerLabel: String?
-    var footerProgressLbl: String?
-    var footerVw: Bool
-    var expanded: Bool
-    
-    init(footerLabel: String, footerProgressLbl: String, footerVw: Bool) {
-        self.footerLabel = footerLabel
-        self.footerProgressLbl = footerProgressLbl
-        self.footerVw = footerVw
-        self.expanded = true
-    }
-    
-}
 
 class DownloadEntryViewCell: UITableViewCell {
     @IBOutlet weak var rightView: UIView!
@@ -46,11 +32,6 @@ class DownloadEntryViewCell: UITableViewCell {
         
     }
     
-    func set(content: ExpandingTableViewCellContent) {
-        
-        //self.footerLbl1.text = content.expanded ? content.footerLabel: ""
-        //self.footerProgressLabel.text = content.expanded ? content.footerProgressLbl : ""
-        self.footerView.isHidden = content.expanded ? content.footerVw : false
-    }
+   
 }
 

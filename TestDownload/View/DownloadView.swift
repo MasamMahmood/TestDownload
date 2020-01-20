@@ -10,6 +10,13 @@ import UIKit
 
 class DownloadView: UITableViewCell {
 
+    @IBOutlet weak var progressLbl: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var downloadLbl: UILabel!
+    @IBOutlet weak var pinView: UIView!
+    @IBOutlet weak var verticalView: UIView!
+    @IBOutlet weak var HoriView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

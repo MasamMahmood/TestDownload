@@ -16,21 +16,17 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DownloadEntryViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DownloadEntryViewCell" rowHeight="74" id="hRG-Ex-DZU" userLabel="DownloadEntryViewCell" customClass="DownloadEntryViewCell" customModule="TestDownload" customModuleProvider="target" propertyAccessControl="none">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DownloadEntryViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DownloadEntryViewCell" rowHeight="135" id="hRG-Ex-DZU" userLabel="DownloadEntryViewCell" customClass="DownloadEntryViewCell" customModule="TestDownload" customModuleProvider="target" propertyAccessControl="none">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRG-Ex-DZU" id="mj8-bg-DOh">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zk1-zk-Ozm">
                         <rect key="frame" x="7" y="0.0" width="360" height="72"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="j0o-dg-4i2">
-                                <rect key="frame" x="-1" y="0.0" width="361" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="04 Mayıs 2018 Cuma Randevuları" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qf3-ED-wgR">
                                 <rect key="frame" x="77" y="10" width="227" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -84,21 +80,80 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nIa-5U-i6K">
+                        <rect key="frame" x="7" y="72" width="360" height="59"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GMa-xJ-73U">
+                                <rect key="frame" x="33" y="-1" width="1" height="32"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.56078431370000004" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fsq-Jh-1Cy">
+                                <rect key="frame" x="33" y="31" width="22" height="1"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.47058823529999999" green="0.56078431370000004" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="Bfg-lc-VX4">
+                                <rect key="frame" x="75" y="37" width="267" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.3294117647" green="0.65490196079999996" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="4036369 - 200014411444444" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMY-LU-8hk">
+                                <rect key="frame" x="74" y="25" width="227" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="0.2332891822" green="0.28437167410000003" blue="0.38401141760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="İndiriliyor (%95)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWw-KM-wcx">
+                                <rect key="frame" x="273" y="18" width="70" height="13"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="10"/>
+                                <color key="textColor" red="0.47058823529411764" green="0.5607843137254902" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cyk-lR-qko">
+                                <rect key="frame" x="54" y="27" width="8" height="8"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.84705882349999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
+                <outlet property="PinView1" destination="Cyk-lR-qko" id="bLB-tB-Ycr"/>
                 <outlet property="downloadURLLabel" destination="ncz-mM-Ncr" id="3W1-Kr-yij"/>
                 <outlet property="fileNameLabel" destination="qf3-ED-wgR" id="wZ3-RD-T25"/>
+                <outlet property="footerLbl1" destination="lMY-LU-8hk" id="7bL-U5-EiU"/>
+                <outlet property="footerPrg1" destination="Bfg-lc-VX4" id="88Y-tV-ddF"/>
+                <outlet property="footerProgressLabel" destination="nWw-KM-wcx" id="fjj-Oo-Szy"/>
+                <outlet property="footerView" destination="nIa-5U-i6K" id="KKV-vZ-DoQ"/>
+                <outlet property="h1View" destination="GMa-xJ-73U" id="dJF-9g-FDl"/>
                 <outlet property="imgView" destination="cia-ZN-MRg" id="NQp-wF-Euh"/>
                 <outlet property="individualProgress" destination="RX0-YX-oR1" id="ueU-xF-Qb7"/>
                 <outlet property="leftView" destination="jzC-qJ-FHR" id="nwi-f6-p7V"/>
                 <outlet property="progressLabel" destination="77I-Vj-Frq" id="hKJ-h8-b7n"/>
                 <outlet property="rightView" destination="Zk1-zk-Ozm" id="ajT-On-4AI"/>
-                <outlet property="stackviewOption" destination="j0o-dg-4i2" id="fA8-LV-RiV"/>
+                <outlet property="v1View" destination="Fsq-Jh-1Cy" id="NAj-HH-Cn0"/>
             </connections>
-            <point key="canvasLocation" x="32.799999999999997" y="84.557721139430285"/>
+            <point key="canvasLocation" x="32.799999999999997" y="111.99400299850076"/>
         </tableViewCell>
     </objects>
     <resources>

@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
     
     @IBOutlet weak var tableView: UITableView!
-    var childView = DownloadView()
     let urlList = [
     ["The Swift Programming Language", "https://swift.org/documentation/"],
     ["Crossdomain.xml", "https://jmsliu.com/crossdomain.xml"]]
@@ -42,12 +41,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "DownloadEntryViewCell", for: indexPath) as! DownloadEntryViewCell
         
         var stackHeight = 0
-        for i in 1...childView.count()
+        for i in 1...urlList.count
         {
             let child_view = Bundle.main.loadNibNamed("DownloadView", owner: self, options: nil)?.first as! DownloadView
-            child_view.lblProgress.text = "Swift_programimg"
+            child_view.progressLbl.text = urlList[indexPath.row][0]
             cell.stackviewOption.addArrangedSubview(child_view)
-            stackHeight = stackHeight + 33.0
+            stackHeight = stackHeight + Int(33.0)
         }
         cell.stackviewOption.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
         
