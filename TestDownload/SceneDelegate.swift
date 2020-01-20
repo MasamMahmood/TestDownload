@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  TestDownload
 //
-//  Created by Masam Mahmood on 20.01.2020.
-//  Copyright © 2020 Masam Mahmood. All rights reserved.
+//  Created by Masam  on 20.01.2020.
+//  Copyright © 2020 Masam . All rights reserved.
 //
 
 import UIKit

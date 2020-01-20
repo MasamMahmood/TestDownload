@@ -15,6 +15,10 @@
 		D0DDC41123D58DB40075F294 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC40F23D58DB40075F294 /* LaunchScreen.storyboard */; };
 		D0DDC41C23D58DB40075F294 /* TestDownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC41B23D58DB40075F294 /* TestDownloadTests.swift */; };
 		D0DDC42723D58DB40075F294 /* TestDownloadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC42623D58DB40075F294 /* TestDownloadUITests.swift */; };
+		D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */; };
+		D0DDC43723D58E340075F294 /* DownloadEntryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */; };
+		D0DDC43E23D5BDA30075F294 /* DownloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC43D23D5BDA30075F294 /* DownloadView.xib */; };
+		D0DDC44223D5C0280075F294 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC44123D5C0280075F294 /* DownloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		D0DDC42223D58DB40075F294 /* TestDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DDC42623D58DB40075F294 /* TestDownloadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloadUITests.swift; sourceTree = "<group>"; };
 		D0DDC42823D58DB40075F294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadEntryViewCell.swift; sourceTree = "<group>"; };
+		D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadEntryViewCell.xib; sourceTree = "<group>"; };
+		D0DDC43D23D5BDA30075F294 /* DownloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadView.xib; sourceTree = "<group>"; };
+		D0DDC44123D5C0280075F294 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,7 @@
 		D0DDC40323D58DB30075F294 /* TestDownload */ = {
 			isa = PBXGroup;
 			children = (
+				D0DDC43A23D5BD5B0075F294 /* View */,
 				D0DDC40423D58DB30075F294 /* AppDelegate.swift */,
 				D0DDC40623D58DB30075F294 /* SceneDelegate.swift */,
 				D0DDC40823D58DB30075F294 /* ViewController.swift */,
@@ -126,6 +135,17 @@
 				D0DDC42823D58DB40075F294 /* Info.plist */,
 			);
 			path = TestDownloadUITests;
+			sourceTree = "<group>";
+		};
+		D0DDC43A23D5BD5B0075F294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0DDC43D23D5BDA30075F294 /* DownloadView.xib */,
+				D0DDC44123D5C0280075F294 /* DownloadView.swift */,
+				D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */,
+				D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,9 +252,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DDC43E23D5BDA30075F294 /* DownloadView.xib in Resources */,
 				D0DDC41123D58DB40075F294 /* LaunchScreen.storyboard in Resources */,
 				D0DDC40E23D58DB40075F294 /* Assets.xcassets in Resources */,
 				D0DDC40C23D58DB30075F294 /* Main.storyboard in Resources */,
+				D0DDC43723D58E340075F294 /* DownloadEntryViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0DDC44223D5C0280075F294 /* DownloadView.swift in Sources */,
 				D0DDC40923D58DB30075F294 /* ViewController.swift in Sources */,
 				D0DDC40523D58DB30075F294 /* AppDelegate.swift in Sources */,
 				D0DDC40723D58DB30075F294 /* SceneDelegate.swift in Sources */,
+				D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
