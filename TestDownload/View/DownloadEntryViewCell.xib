@@ -16,11 +16,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DownloadEntryViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DownloadEntryViewCell" rowHeight="77" id="hRG-Ex-DZU" userLabel="DownloadEntryViewCell" customClass="DownloadEntryViewCell" customModule="TestDownload" customModuleProvider="target" propertyAccessControl="none">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="DownloadEntryViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="DownloadEntryViewCell" rowHeight="74" id="hRG-Ex-DZU" userLabel="DownloadEntryViewCell" customClass="DownloadEntryViewCell" customModule="TestDownload" customModuleProvider="target" propertyAccessControl="none">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hRG-Ex-DZU" id="mj8-bg-DOh">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zk1-zk-Ozm">
@@ -88,7 +88,7 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="X1Y-i4-ian">
-                        <rect key="frame" x="0.0" y="71" width="375" height="6"/>
+                        <rect key="frame" x="0.0" y="71" width="375" height="3"/>
                     </stackView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -113,7 +113,7 @@
                 <outlet property="rightView" destination="Zk1-zk-Ozm" id="ajT-On-4AI"/>
                 <outlet property="stackViewFooter" destination="X1Y-i4-ian" id="Pai-V8-uMY"/>
             </connections>
-            <point key="canvasLocation" x="32.799999999999997" y="85.907046476761622"/>
+            <point key="canvasLocation" x="32.799999999999997" y="84.557721139430285"/>
         </tableViewCell>
     </objects>
     <resources>

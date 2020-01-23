@@ -69,9 +69,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
             child_view.projName.text = dic?.projectName
             cell.stackViewFooter.addArrangedSubview(child_view)
-            stackHeight = stackHeight + 60.0
+            stackHeight = stackHeight + 35.0
+            
         }
-        cell.stackViewFooter.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
+       // cell.stackViewFooter.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
         return cell
     }
 }

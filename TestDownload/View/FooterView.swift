@@ -13,4 +13,5 @@ class FooterView: UIView {
 
     @IBOutlet weak var projName: UILabel!
     @IBOutlet weak var footerProgress: UIProgressView!
+    @IBOutlet weak var mainView: UIView!
 }
