@@ -1,0 +1,37 @@
+{
+  "appointments": [
+    {
+      "id": 15473455,
+      "isProjectManual": false,
+      "projectType": "i",
+      "appointmentHour": "15:06",
+      "projectName": "Rana Alagöz",
+      "warmingType": "b",
+      "subTitle": "10433 ",
+      "projectDistrict": "Gebze",
+      "projectFirmName": "Dipos 4 Test Firması",
+      "controlHour": "",
+      "date": "2019-12-26T15:06:00",
+      "backgroundColorLight": "#cfd8dc",
+      "backgroundColorDark": "#556f7b"
+    },
+    {
+      "id": 15473456,
+      "isProjectManual": false,
+      "projectType": "i",
+      "appointmentHour": "17:00",
+      "projectName": "Ayten Alpman",
+      "warmingType": "b",
+      "subTitle": "7447024 ",
+      "projectDistrict": "Çayırova",
+      "projectFirmName": "Dipos 4 Test Firması",
+      "controlHour": "",
+      "date": "2019-12-26T17:00:00",
+      "backgroundColorLight": "#cfd8dc",
+      "backgroundColorDark": "#556f7b"
+    }
+  ],
+  "isSuccess": true,
+  "message": "İşlem Başarılı.",
+  "statusCode": 1
+}

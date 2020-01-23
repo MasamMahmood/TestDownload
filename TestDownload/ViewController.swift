@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
       
     
     @IBOutlet weak var tableView: UITableView!
+    var Appdata : [Appointment]?
+    
     let urlList = [
     ["The Swift Programming Language", "https://swift.org/documentation/"],
     ["Crossdomain.xml", "https://jmsliu.com/crossdomain.xml"]]
@@ -22,37 +24,55 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         let nib = UINib.init(nibName: "DownloadEntryViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "DownloadEntryViewCell")
+        pullData()
+
+    }
+    
+    func pullData(){
         
-        let nibChild = UINib.init(nibName: "DownloadView", bundle: nil)
-        self.tableView.register(nibChild, forCellReuseIdentifier: "DownloadView")
+        if let url = Bundle.main.url(forResource: "Appointment", withExtension: "json") {
+            do {
+                
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                let jsonData = try decoder.decode(ResponseData.self, from: data)
+                self.Appdata = jsonData.appointments
+                self.tableView.reloadData()
+            } catch {
+                print("error:\(error)")
+            }
+        }
         
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 140
-        
+        return UITableView.automaticDimension
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return urlList.count
+        //return urlList.count
+        return Appdata?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DownloadEntryViewCell", for: indexPath) as! DownloadEntryViewCell
+        let dic = Appdata?[indexPath.row]
+        var stackHeight:CGFloat = 0.0
+//        for i in 1...urlList.count
+//        {
+//            let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
+//            cell.stackViewFooter.addArrangedSubview(child_view)
+//            stackHeight = stackHeight + 60.0
+//        }
         
-        var stackHeight = 0
-        for i in 1...urlList.count
-        {
-            let child_view = Bundle.main.loadNibNamed("DownloadView", owner: self, options: nil)?.first as! DownloadView
-            child_view.progressLbl.text = urlList[indexPath.row][0]
-            cell.stackviewOption.addArrangedSubview(child_view)
-            stackHeight = stackHeight + Int(33.0)
+        for i in Appdata ?? [] {
+            let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
+            child_view.projName.text = dic?.projectName
+            cell.stackViewFooter.addArrangedSubview(child_view)
+            stackHeight = stackHeight + 60.0
         }
-        cell.stackviewOption.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
-        
+        cell.stackViewFooter.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
         return cell
     }
-    
-
 }
 

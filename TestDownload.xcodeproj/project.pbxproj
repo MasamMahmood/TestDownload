@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB412EC023D5CE3B00724C5A /* FooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB412EBF23D5CE3B00724C5A /* FooterView.xib */; };
+		AB412EC223D5CEE400724C5A /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB412EC123D5CEE400724C5A /* FooterView.swift */; };
+		D09BF95B23D9807600BE4B0D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09BF95A23D9807600BE4B0D /* Model.swift */; };
+		D09BF95D23D980C000BE4B0D /* Appointment.json in Resources */ = {isa = PBXBuildFile; fileRef = D09BF95C23D980C000BE4B0D /* Appointment.json */; };
 		D0DDC40523D58DB30075F294 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC40423D58DB30075F294 /* AppDelegate.swift */; };
 		D0DDC40723D58DB30075F294 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC40623D58DB30075F294 /* SceneDelegate.swift */; };
 		D0DDC40923D58DB30075F294 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC40823D58DB30075F294 /* ViewController.swift */; };
@@ -17,8 +21,6 @@
 		D0DDC42723D58DB40075F294 /* TestDownloadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC42623D58DB40075F294 /* TestDownloadUITests.swift */; };
 		D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */; };
 		D0DDC43723D58E340075F294 /* DownloadEntryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */; };
-		D0DDC43E23D5BDA30075F294 /* DownloadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC43D23D5BDA30075F294 /* DownloadView.xib */; };
-		D0DDC44223D5C0280075F294 /* DownloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC44123D5C0280075F294 /* DownloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB412EBF23D5CE3B00724C5A /* FooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FooterView.xib; sourceTree = "<group>"; };
+		AB412EC123D5CEE400724C5A /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		D09BF95A23D9807600BE4B0D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		D09BF95C23D980C000BE4B0D /* Appointment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Appointment.json; sourceTree = "<group>"; };
 		D0DDC40123D58DB30075F294 /* TestDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DDC40423D58DB30075F294 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0DDC40623D58DB30075F294 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,8 +61,6 @@
 		D0DDC42823D58DB40075F294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadEntryViewCell.swift; sourceTree = "<group>"; };
 		D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadEntryViewCell.xib; sourceTree = "<group>"; };
-		D0DDC43D23D5BDA30075F294 /* DownloadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DownloadView.xib; sourceTree = "<group>"; };
-		D0DDC44123D5C0280075F294 /* DownloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				D0DDC40D23D58DB40075F294 /* Assets.xcassets */,
 				D0DDC40F23D58DB40075F294 /* LaunchScreen.storyboard */,
 				D0DDC41223D58DB40075F294 /* Info.plist */,
+				D09BF95A23D9807600BE4B0D /* Model.swift */,
+				D09BF95C23D980C000BE4B0D /* Appointment.json */,
 			);
 			path = TestDownload;
 			sourceTree = "<group>";
@@ -140,10 +146,10 @@
 		D0DDC43A23D5BD5B0075F294 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D0DDC43D23D5BDA30075F294 /* DownloadView.xib */,
-				D0DDC44123D5C0280075F294 /* DownloadView.swift */,
 				D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */,
 				D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */,
+				AB412EBF23D5CE3B00724C5A /* FooterView.xib */,
+				AB412EC123D5CEE400724C5A /* FooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -252,7 +258,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDC43E23D5BDA30075F294 /* DownloadView.xib in Resources */,
+				AB412EC023D5CE3B00724C5A /* FooterView.xib in Resources */,
+				D09BF95D23D980C000BE4B0D /* Appointment.json in Resources */,
 				D0DDC41123D58DB40075F294 /* LaunchScreen.storyboard in Resources */,
 				D0DDC40E23D58DB40075F294 /* Assets.xcassets in Resources */,
 				D0DDC40C23D58DB30075F294 /* Main.storyboard in Resources */,
@@ -281,9 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDC44223D5C0280075F294 /* DownloadView.swift in Sources */,
 				D0DDC40923D58DB30075F294 /* ViewController.swift in Sources */,
 				D0DDC40523D58DB30075F294 /* AppDelegate.swift in Sources */,
+				AB412EC223D5CEE400724C5A /* FooterView.swift in Sources */,
+				D09BF95B23D9807600BE4B0D /* Model.swift in Sources */,
 				D0DDC40723D58DB30075F294 /* SceneDelegate.swift in Sources */,
 				D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */,
 			);
