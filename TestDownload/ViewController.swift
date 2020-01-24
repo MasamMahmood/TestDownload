@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var tableView: UITableView!
     var Appdata : [Appointment]?
+    var selectedIndex : Int! = -1
     
     let urlList = [
     ["The Swift Programming Language", "https://swift.org/documentation/"],
@@ -45,14 +46,33 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == selectedIndex{
+            selectedIndex = -1
+        }else{
+            selectedIndex = indexPath.row
+        }
+        tableView.reloadData()
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        if indexPath.row == selectedIndex
+        {
+            return UITableView.automaticDimension
+        }else{
+            return 78
+        }
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //return urlList.count
-        return Appdata?.count ?? 0
+        return Appdata?.count  ?? 0
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DownloadEntryViewCell", for: indexPath) as! DownloadEntryViewCell
@@ -67,7 +87,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         for i in Appdata ?? [] {
             let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
-            child_view.projName.text = dic?.projectName
+            child_view.projName.text = "\(i.projectName ?? "")" + "  " + "\(i.subTitle ?? "")"
             cell.stackViewFooter.addArrangedSubview(child_view)
             stackHeight = stackHeight + 35.0
             
@@ -75,5 +95,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
        // cell.stackViewFooter.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let refresh =  UIContextualAction(style: .normal, title: nil, handler: { (action,view,completionHandler ) in
+            //do stuff
+            print("refresh")
+            completionHandler(true)
+        })
+        //refresh.image = UIImage(named: "yenile")
+        refresh.backgroundColor = .green
+        
+        
+        let delete =  UIContextualAction(style: .normal, title: nil, handler: { (action,view,completionHandler ) in
+            //do stuff
+            completionHandler(true)
+        })
+        
+        //delete.image = UIImage(named: "close_passive")
+        delete.backgroundColor = .red
+        let confrigation = UISwipeActionsConfiguration(actions: [delete, refresh])
+        
+        return confrigation
+    }
+    
 }
 
