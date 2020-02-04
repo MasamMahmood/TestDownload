@@ -22,6 +22,17 @@ class DownloadEntryViewCell: UITableViewCell {
         super.awakeFromNib()
         
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        leftView.roundCorners([.bottomLeft, .topLeft], radius: 3.0)
+    }
+    
+    override func prepareForReuse() {
+        self.stackViewFooter.subviews.forEach {
+            $0.removeFromSuperview()
+        }
+    }
        
 }
 

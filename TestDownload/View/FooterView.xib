@@ -89,9 +89,6 @@
                         <constraint firstAttribute="height" constant="33" id="ybn-Yk-IEY"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                            <integer key="value" value="2"/>
-                        </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="boolean" keyPath="layer.clipBounds" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </view>

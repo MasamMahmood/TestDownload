@@ -1,0 +1,133 @@
+{
+    "address": "243 Sokak Kapı No:1 ABlok Uğurevler İSTANBUL",
+    "appointmentDate": "Mart 19 8:00",
+    "appointmentId": 0,
+    "appointmentType": "Tesisat Control",
+    "buildingCode": "108545",
+    "projectName": "12 Kentsel Dönüşüm",
+    "projectNo": "201801108545",
+    "projectType": "İç Tesısat",
+    "sectionList": [
+        {
+            "items": [
+                {
+                    "actionType": 0,
+                    "bgColor": "#d5ebda",
+                    "textField": "D:34",
+                    "unitId": 14
+                },
+                {
+                    "actionType": 0,
+                    "bgColor": "#e5cfcf",
+                    "textField": "KOLON",
+                    "unitId": 123
+                }
+            ],
+            "title": "Birimler"
+        },
+        {
+            "items": [
+                {
+                    "actionType": 1,
+                    "actionUrl": "https://img-s2.onedio.com/id-584e6efdfd0404f650155a53/rev-0/w-635/f-jpg-webp/s-7cace84b2807ab8e0e0ef15a14f6aba69b6df28a.webp",
+                    "textField": "Proje Kapağı",
+                    "unitId": 1
+                },
+                {
+                    "actionType": 2,
+                    "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?actionUrl=http://d4static.zetacad.com/31/2019/8585/3/6999432.pdf&page=5",
+                    "textField": "Vaziyet Planı"
+                },
+                {
+                    "actionType": 1,
+                    "actionUrl": "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555357003/shape/mentalfloss/heat_primary.jpg",
+                    "textField": "7. Kat (D:12 D:34)"
+                },
+                {
+                    "actionType": 1,
+                    "actionUrl": "https://i.kinja-img.com/gawker-media/image/upload/s--wKuV-I7Q--/c_scale,f_auto,fl_progressive,q_80,w_800/dbup0syj7iqohgak08eh.jpg",
+                    "textField": "İzometrik Şema"
+                },
+                {
+                    "actionType": 1,
+                    "actionUrl": "https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/f_auto,q_auto,w_1100/v1555357003/shape/mentalfloss/heat_primary.jpg",
+                    "textField": "Boru Çapı Hesabı"
+                },
+                {
+                    "actionType": 1,
+                    "actionUrl": "https://i.kinja-img.com/gawker-media/image/upload/s--wKuV-I7Q--/c_scale,f_auto,fl_progressive,q_80,w_800/dbup0syj7iqohgak08eh.jpg",
+                    "textField": "Lokal Kayıplar"
+                }
+            ],
+            "title": "Proje Planlari"
+        },
+        {
+            "items": [
+                {
+                    "actionType": 1,
+                    "actionUrl": "http://d4static.zetacad.com/31/2019/8585/75731/3e613fbd-42e4-403a-9d31-30da7d258534.jpg",
+                    "textField": "Müşteri Sözleşmesi"
+                }
+            ],
+            "title": "Proje Evrakları"
+        },
+        {
+            "items": [
+                {
+                    "textField": "Firma Adı",
+                    "textValue": "Günerji Güneş Enerji"
+                },
+                {
+                    "textField": "Yetkili",
+                    "textValue": "Bekir Öztürk"
+                },
+                {
+                    "textField": "Switch",
+                    "booleanValue": true,
+                    "textValue": "Bekir Öztürk"
+                },
+                {
+                    "actionType": 4,
+                    "textField": "Telefon",
+                    "textValue": "05322220201"
+                },
+                {
+                    "actionType": 4,
+                    "textField": "Gsm",
+                    "textValue": "0532 222 02 02"
+                },
+                {
+                    "actionType": 3,
+                    "actionUrl": "http://d4.zetacad.com/external/getMap?addr=CUMHUR%c4%b0YET+ESK%c4%b0+++No%3a+3+%c3%87AYIROVA+%2f+KOCAEL%c4%b0%22",
+                    "textField": "Adres",
+                    "textValue": "243 Sokak Kapı No:1 ABlok Uğurevler İSTANBUL",
+                    "latitude": 39.9530716,
+                    "longitude": 29.8153278
+                    
+                },
+                {
+                    "actionType": 6,
+                    "textValue": "Daha Fazla Bilgi"
+                }
+            ],
+            "title": "Firma Bilgileri"
+        },
+        {
+            "items": [
+                {
+                    "textField": "Ad Soyad",
+                    "textValue": "Günerji Güneş Enerji"
+                },
+                {
+                    "actionType": 4,
+                    "textField": "Telefon",
+                    "textValue": "0532 222 02 03"
+                }
+            ],
+            "title": "Mühendis Bilgileri"
+        }
+    ],
+    "isSuccess": false,
+    "statusCode": 0,
+    "statusMessage": ""
+}
