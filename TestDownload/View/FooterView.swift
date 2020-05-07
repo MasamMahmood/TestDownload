@@ -2,7 +2,7 @@
 //  FooterView.swift
 //  TestDownload
 //
-//  Created by eHeuristic on 20/01/20.
+//  Created by Masam on 20/01/20.
 //  Copyright © 2020 Masam Mahmood. All rights reserved.
 //
 

@@ -10,13 +10,14 @@ import UIKit
 import Alamofire
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, URLSessionDelegate {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
       
     
     @IBOutlet weak var tableView: UITableView!
     var Appdata : [Appointment]?
     var AppDetailData : AppointmentDetail?
     var selectedIndex : Int! = -1
+    var downloadSpeed: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -112,6 +113,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 print(progress)
                 print(progress.fractionCompleted)
+                self.downloadSpeed = progress.fractionCompleted
+                print(self.downloadSpeed)
                 
             }).response(completionHandler: { (DefaultDownloadResponse) in
                 callback(DefaultDownloadResponse.response?.statusCode == 200, DefaultDownloadResponse.destinationURL?.path)
@@ -157,10 +160,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "DownloadEntryViewCell", for: indexPath) as! DownloadEntryViewCell
         let dic = Appdata?[indexPath.row]
         var stackHeight:CGFloat = 0.0
+        cell.fileNameLabel.text = dic?.date
         
         for i in Appdata ?? [] {
             let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
             child_view.projName.text = "\(i.projectName ?? "")" + "  " + "\(i.subTitle ?? "")"
+            
             cell.stackViewFooter.addArrangedSubview(child_view)
             stackHeight = stackHeight + 60.0
             

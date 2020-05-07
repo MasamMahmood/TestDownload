@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -117,6 +117,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D02DB8BA24642FD600565A18 /* JsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D09BF95C23D980C000BE4B0D /* Appointment.json */,
+				D06788CD23E99E67000EEFB1 /* AppointmentDetail.json */,
+			);
+			path = JsonFiles;
+			sourceTree = "<group>";
+		};
 		D0DDC3F823D58DB30075F294 = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +151,7 @@
 		D0DDC40323D58DB30075F294 /* TestDownload */ = {
 			isa = PBXGroup;
 			children = (
+				D02DB8BA24642FD600565A18 /* JsonFiles */,
 				D0DDC43A23D5BD5B0075F294 /* View */,
 				D0DDC40423D58DB30075F294 /* AppDelegate.swift */,
 				D0DDC40623D58DB30075F294 /* SceneDelegate.swift */,
@@ -152,8 +162,6 @@
 				D0DDC41223D58DB40075F294 /* Info.plist */,
 				D06788BF23E96129000EEFB1 /* UIView+Extensions.swift */,
 				D09BF95A23D9807600BE4B0D /* Model.swift */,
-				D09BF95C23D980C000BE4B0D /* Appointment.json */,
-				D06788CD23E99E67000EEFB1 /* AppointmentDetail.json */,
 			);
 			path = TestDownload;
 			sourceTree = "<group>";
@@ -197,7 +205,6 @@
 				5982A317E25C2F1ECF26A9B7 /* Pods-TestDownloadTests.debug.xcconfig */,
 				835726E315C260EAE99F1D1F /* Pods-TestDownloadTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

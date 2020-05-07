@@ -1,0 +1,475 @@
+{
+  "address": "Tapınak Ebu Simbel   No: 1 Mısır / KOCAELİ",
+  "appointmentDate": "Şubat 06 08:56",
+  "appointmentType": "Tesisat Kontrol",
+  "appointmentId": 15473453,
+  "buildingCode": "5343422",
+  "projectName": "Melek Mosso",
+  "projectNo": "PRJ-2012",
+  "projectType": "k",
+  "sectionList": [
+    {
+      "title": "Birimler",
+      "items": [
+        {
+          "actionType": 0,
+          "bgColor": "#d5ebda",
+          "textField": "D1",
+          "textValue": "",
+          "unitId": 8570009,
+          "appointmentId": 15473453
+        },
+        {
+          "actionType": 0,
+          "bgColor": "#e5cfcf",
+          "textField": "D3",
+          "textValue": "",
+          "unitId": 8570011,
+          "appointmentId": 15473453
+        }
+      ]
+    },
+    {
+      "title": "Proje Planları",
+      "items": [
+        {
+          "actionType": 2,
+          "textField": "KAPAK",
+          "actionUrl": "https://www.hq.nasa.gov/alsj/a17/A17_FlightPlan.pdf"
+        },
+        {
+          "actionType": 2,
+          "textField": "VAZİYET",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=2"
+        },
+        {
+          "actionType": 2,
+          "textField": "ZEMİN KAT [D:1]",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=3"
+        },
+        {
+          "actionType": 2,
+          "textField": "1. KAT [D:2]",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=4"
+        },
+        {
+          "actionType": 2,
+          "textField": "2. KAT [D:3]",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=5"
+        },
+        {
+          "actionType": 2,
+          "textField": "3. KAT [D:4]",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=6"
+        },
+        {
+          "actionType": 2,
+          "textField": "İZOMETRİK ŞEMA",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=7"
+        },
+        {
+          "actionType": 2,
+          "textField": "LOKAL KAYIP TABLOSU",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=8"
+        },
+        {
+          "actionType": 2,
+          "textField": "21 mbar BORU ÇAPI HESAPLARI TABLOSU",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=9"
+        },
+        {
+          "actionType": 2,
+          "textField": "TÜM DEVRE KAYIPLARI",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=10"
+        },
+        {
+          "actionType": 2,
+          "textField": "STANDARTLAR TABLOSU",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=11"
+        },
+        {
+          "actionType": 2,
+          "textField": "DETAY TOBLOSU",
+          "actionUrl": "http://pdfv2.zetacad.com/Pdf/GetPageFromPdfUrl?url=http://d4static.zetacad.com/31/2019/8585/6999595/6999595.pdf&page=12"
+        }
+      ]
+    },
+    {
+      "title": "Proje Evrakları",
+      "items": [
+        {
+          "actionType": 1,
+          "textField": "1- Baca Raporu [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/7396aa3f-9101-48b4-b09d-29cbefc92f65.jpg",
+          "uniqueFileName": "6999595_16_14785027"
+        },
+        {
+          "actionType": 1,
+          "textField": "2- Baca Raporu [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/7396aa3f-9101-48b4-b09d-29cbefc92f65.jpg",
+          "uniqueFileName": "6999595_16_14785027"
+        },
+        {
+          "actionType": 1,
+          "textField": "3- Baca Raporu [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/7396aa3f-9101-48b4-b09d-29cbefc92f65.jpg",
+          "uniqueFileName": "6999595_16_14785027"
+        },
+        {
+          "actionType": 1,
+          "textField": "4- Baca Raporu [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/7396aa3f-9101-48b4-b09d-29cbefc92f65.jpg",
+          "uniqueFileName": "6999595_16_14785027"
+        },
+        {
+          "actionType": 1,
+          "textField": "5- Cihaz Minimum Tüketim Beyanı [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/fb30004f-c70e-4ad6-8d73-9d2e2cd32516.png",
+          "uniqueFileName": "6999595_19_14786288"
+        },
+        {
+          "actionType": 1,
+          "textField": "6- Cihaz Minimum Tüketim Beyanı [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/fb30004f-c70e-4ad6-8d73-9d2e2cd32516.png",
+          "uniqueFileName": "6999595_19_14786288"
+        },
+        {
+          "actionType": 1,
+          "textField": "7- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999532/7b1433f8-30c5-4b9f-b288-a05301d6a852.jpg",
+          "uniqueFileName": "6999595_8_14785042"
+        },
+        {
+          "actionType": 1,
+          "textField": "8- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/45628387/85cba226-adce-46c8-91a7-84cfdff9275b.PNG",
+          "uniqueFileName": "6999595_8_14783013"
+        },
+        {
+          "actionType": 1,
+          "textField": "9- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999521/55666451-b2e0-4572-a25d-92395024d647.jpg",
+          "uniqueFileName": "6999595_8_14785022"
+        },
+        {
+          "actionType": 1,
+          "textField": "10- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999524/3d1bc5c4-5454-4927-8954-c42ed7d5aa9a.jpg",
+          "uniqueFileName": "6999595_8_14785023"
+        },
+        {
+          "actionType": 1,
+          "textField": "11- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999525/5a665d07-6162-4065-b6d7-832059d08f1f.jpg",
+          "uniqueFileName": "6999595_8_14785024"
+        },
+        {
+          "actionType": 1,
+          "textField": "12- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/7555741/bbe182eb-748e-41a8-9673-ea5836828073.png",
+          "uniqueFileName": "6999595_8_14782017"
+        },
+        {
+          "actionType": 1,
+          "textField": "13- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/53583e7c-0fce-4b40-882a-eb1bb8c2b3bd.jpg",
+          "uniqueFileName": "6999595_8_14785026"
+        },
+        {
+          "actionType": 1,
+          "textField": "14- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999527/7d1855f6-9652-4100-b885-487e08a39eaf.jpg",
+          "uniqueFileName": "6999595_8_14785032"
+        },
+        {
+          "actionType": 1,
+          "textField": "15- Müşteri Sözleşmesi [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999529/ff8fb615-5342-4325-9b99-0e333b7997e4.jpg",
+          "uniqueFileName": "6999595_8_14785036"
+        },
+        {
+          "actionType": 1,
+          "textField": "16- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999529/ff8fb615-5342-4325-9b99-0e333b7997e4.jpg",
+          "uniqueFileName": "6999595_8_14785036"
+        },
+        {
+          "actionType": 1,
+          "textField": "17- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999527/7d1855f6-9652-4100-b885-487e08a39eaf.jpg",
+          "uniqueFileName": "6999595_8_14785032"
+        },
+        {
+          "actionType": 1,
+          "textField": "18- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/53583e7c-0fce-4b40-882a-eb1bb8c2b3bd.jpg",
+          "uniqueFileName": "6999595_8_14785026"
+        },
+        {
+          "actionType": 1,
+          "textField": "19- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/7555741/bbe182eb-748e-41a8-9673-ea5836828073.png",
+          "uniqueFileName": "6999595_8_14782017"
+        },
+        {
+          "actionType": 1,
+          "textField": "20- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999525/5a665d07-6162-4065-b6d7-832059d08f1f.jpg",
+          "uniqueFileName": "6999595_8_14785024"
+        },
+        {
+          "actionType": 1,
+          "textField": "21- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/45628387/85cba226-adce-46c8-91a7-84cfdff9275b.PNG",
+          "uniqueFileName": "6999595_8_14783013"
+        },
+        {
+          "actionType": 1,
+          "textField": "22- Müşteri Sözleşmesi [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999532/7b1433f8-30c5-4b9f-b288-a05301d6a852.jpg",
+          "uniqueFileName": "6999595_8_14785042"
+        },
+        {
+          "actionType": 1,
+          "textField": "23- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999525/5a665d07-6162-4065-b6d7-832059d08f1f.jpg",
+          "uniqueFileName": "6999595_8_14785024"
+        },
+        {
+          "actionType": 1,
+          "textField": "24- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/45628387/85cba226-adce-46c8-91a7-84cfdff9275b.PNG",
+          "uniqueFileName": "6999595_8_14783013"
+        },
+        {
+          "actionType": 1,
+          "textField": "25- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999521/55666451-b2e0-4572-a25d-92395024d647.jpg",
+          "uniqueFileName": "6999595_8_14785022"
+        },
+        {
+          "actionType": 1,
+          "textField": "26- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/7555741/bbe182eb-748e-41a8-9673-ea5836828073.png",
+          "uniqueFileName": "6999595_8_14782017"
+        },
+        {
+          "actionType": 1,
+          "textField": "27- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999524/3d1bc5c4-5454-4927-8954-c42ed7d5aa9a.jpg",
+          "uniqueFileName": "6999595_8_14785023"
+        },
+        {
+          "actionType": 1,
+          "textField": "28- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/53583e7c-0fce-4b40-882a-eb1bb8c2b3bd.jpg",
+          "uniqueFileName": "6999595_8_14785026"
+        },
+        {
+          "actionType": 1,
+          "textField": "29- Müşteri Sözleşmesi [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999529/cab4619d-57c1-40a2-841c-e95acaa19bda.jpg",
+          "uniqueFileName": "6999595_8_14785037"
+        },
+        {
+          "actionType": 1,
+          "textField": "30- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999525/5a665d07-6162-4065-b6d7-832059d08f1f.jpg",
+          "uniqueFileName": "6999595_8_14785024"
+        },
+        {
+          "actionType": 1,
+          "textField": "31- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999523/53583e7c-0fce-4b40-882a-eb1bb8c2b3bd.jpg",
+          "uniqueFileName": "6999595_8_14785026"
+        },
+        {
+          "actionType": 1,
+          "textField": "32- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999529/cab4619d-57c1-40a2-841c-e95acaa19bda.jpg",
+          "uniqueFileName": "6999595_8_14785037"
+        },
+        {
+          "actionType": 1,
+          "textField": "33- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999521/55666451-b2e0-4572-a25d-92395024d647.jpg",
+          "uniqueFileName": "6999595_8_14785022"
+        },
+        {
+          "actionType": 1,
+          "textField": "34- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/45628387/85cba226-adce-46c8-91a7-84cfdff9275b.PNG",
+          "uniqueFileName": "6999595_8_14783013"
+        },
+        {
+          "actionType": 1,
+          "textField": "35- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999524/3d1bc5c4-5454-4927-8954-c42ed7d5aa9a.jpg",
+          "uniqueFileName": "6999595_8_14785023"
+        },
+        {
+          "actionType": 1,
+          "textField": "36- Müşteri Sözleşmesi [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2018/8585/7555741/bbe182eb-748e-41a8-9673-ea5836828073.png",
+          "uniqueFileName": "6999595_8_14782017"
+        },
+        {
+          "actionType": 2,
+          "textField": "37- Poliçe",
+          "actionUrl": "http://police3.zetacad.com/getRayPolice2.asp?police=85008309",
+          "uniqueFileName": "6999595_2_6652855"
+        },
+        {
+          "actionType": 2,
+          "textField": "38- Poliçe",
+          "actionUrl": "http://police3.zetacad.com/getRayPolice2.asp?police=85008310",
+          "uniqueFileName": "6999595_2_6652856"
+        },
+        {
+          "actionType": 2,
+          "textField": "39- Poliçe",
+          "actionUrl": "http://police3.zetacad.com/getRayPolice2.asp?police=85008311",
+          "uniqueFileName": "6999595_2_6652857"
+        },
+        {
+          "actionType": 2,
+          "textField": "40- Poliçe",
+          "actionUrl": "http://police3.zetacad.com/getRayPolice2.asp?police=85008312",
+          "uniqueFileName": "6999595_2_6652858"
+        },
+        {
+          "actionType": 1,
+          "textField": "41- Tapu [D1]",
+          "actionUrl": "http://d4static.zetacad.com/0/2019/8585/FrequentlyDocuments/13609bee-9f33-4883-927a-639e9f8fe395.jpg",
+          "uniqueFileName": "6999595_6_14783976"
+        },
+        {
+          "actionType": 1,
+          "textField": "42- Tapu [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/db360853-2d44-4c8f-a73c-d8878a7e6307.png",
+          "uniqueFileName": "6999595_6_14786286"
+        },
+        {
+          "actionType": 1,
+          "textField": "43- Tapu [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/db360853-2d44-4c8f-a73c-d8878a7e6307.png",
+          "uniqueFileName": "6999595_6_14786286"
+        },
+        {
+          "actionType": 1,
+          "textField": "44- Tapu [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999534/70d95ba6-247e-4748-9b30-7c41019ba2d7.jpg",
+          "uniqueFileName": "6999595_6_14785052"
+        },
+        {
+          "actionType": 1,
+          "textField": "45- Tapu [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999534/70d95ba6-247e-4748-9b30-7c41019ba2d7.jpg",
+          "uniqueFileName": "6999595_6_14785052"
+        },
+        {
+          "actionType": 1,
+          "textField": "46- Tapu [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/db360853-2d44-4c8f-a73c-d8878a7e6307.png",
+          "uniqueFileName": "6999595_6_14786286"
+        },
+        {
+          "actionType": 1,
+          "textField": "47- Tapu [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/db360853-2d44-4c8f-a73c-d8878a7e6307.png",
+          "uniqueFileName": "6999595_6_14786286"
+        },
+        {
+          "actionType": 1,
+          "textField": "48- Tapu [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/0/2019/8585/FrequentlyDocuments/13609bee-9f33-4883-927a-639e9f8fe395.jpg",
+          "uniqueFileName": "6999595_6_14783976"
+        },
+        {
+          "actionType": 1,
+          "textField": "49- Teknik Form [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2019/8585/6999519/s-903c93364caf5ffdace8325085f358e24ca693bd.jpg",
+          "uniqueFileName": "6999595_7_14783990"
+        },
+        {
+          "actionType": 1,
+          "textField": "50- Topraklama Raporu [D1]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/6f9e8682-b2e3-4869-8d5a-4ff78112b7f6.png",
+          "uniqueFileName": "6999595_11_14786287"
+        },
+        {
+          "actionType": 1,
+          "textField": "51- Topraklama Raporu [D2]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/6f9e8682-b2e3-4869-8d5a-4ff78112b7f6.png",
+          "uniqueFileName": "6999595_11_14786287"
+        },
+        {
+          "actionType": 1,
+          "textField": "52- Topraklama Raporu [D3]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/6f9e8682-b2e3-4869-8d5a-4ff78112b7f6.png",
+          "uniqueFileName": "6999595_11_14786287"
+        },
+        {
+          "actionType": 1,
+          "textField": "53- Topraklama Raporu [Kolon]",
+          "actionUrl": "http://d4static.zetacad.com/31/2020/8585/6999595/6f9e8682-b2e3-4869-8d5a-4ff78112b7f6.png",
+          "uniqueFileName": "6999595_11_14786287"
+        }
+      ]
+    },
+    {
+      "title": "Firma Bilgileri",
+      "items": [
+        {
+          "textField": "Firma Adı",
+          "textValue": "Dipos 4 Test Firması"
+        },
+        {
+          "textField": "Yetkili",
+          "textValue": "Ahmet Akbayır"
+        },
+        {
+          "actionType": 4,
+          "textField": "Telefon",
+          "textValue": "3328963252"
+        },
+        {
+          "actionType": 4,
+          "textField": "GSM",
+          "textValue": "5073661184"
+        },
+        {
+          "actionType": 3,
+          "textField": "Adres",
+          "textValue": "Piribeyli Mh. Turgut Özal Bulvarı No: 54 ",
+          "actionUrl": "http://d4.zetacad.com/external/getMap?addr=Piribeyli Mh. Turgut Özal Bulvarı No: 54 "
+        },
+        {
+          "actionType": 6,
+          "textValue": "Daha Fazla Bilgi",
+          "actionTitle": "Firma Bilgileri",
+          "actionUrl": "Firm/GetProjectFirmInfo",
+          "actionParamData": "{\"ProjectFirmId\":8585,\"UserId\":0,\"Channel\":null}"
+        }
+      ]
+    },
+    {
+      "title": "Mühendis Bilgileri",
+      "items": [
+        {
+          "textField": "Ad Soyad",
+          "textValue": "AHMET AKBAYIR"
+        },
+        {
+          "actionType": 4,
+          "textField": "Telefon",
+          "textValue": "2164021000"
+        }
+      ]
+    }
+  ],
+  "isSuccess": true,
+  "message": "İşlem Başarılı.",
+  "statusCode": 1
+}
+
