@@ -26,6 +26,8 @@
 		D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */; };
 		D0DDC43723D58E340075F294 /* DownloadEntryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */; };
 		D8464124679128FE17FDDEF8 /* Pods_TestDownload.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E2AA2C8B21429954885055B /* Pods_TestDownload.framework */; };
+		F2030E502464EE47000008D0 /* ALDownloadInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2030E4F2464EE47000008D0 /* ALDownloadInfo.swift */; };
+		F2030E522464EF60000008D0 /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2030E512464EF60000008D0 /* AlamofireExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		D0DDC42823D58DB40075F294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DDC43423D58E340075F294 /* DownloadEntryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadEntryViewCell.swift; sourceTree = "<group>"; };
 		D0DDC43523D58E340075F294 /* DownloadEntryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DownloadEntryViewCell.xib; sourceTree = "<group>"; };
+		F2030E4F2464EE47000008D0 /* ALDownloadInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALDownloadInfo.swift; sourceTree = "<group>"; };
+		F2030E512464EF60000008D0 /* AlamofireExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireExtension.swift; sourceTree = "<group>"; };
 		FFE9F7D7D0BB7245DD35056E /* Pods-TestDownload.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestDownload.release.xcconfig"; path = "Target Support Files/Pods-TestDownload/Pods-TestDownload.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +155,8 @@
 		D0DDC40323D58DB30075F294 /* TestDownload */ = {
 			isa = PBXGroup;
 			children = (
+				F2030E512464EF60000008D0 /* AlamofireExtension.swift */,
+				F2030E4F2464EE47000008D0 /* ALDownloadInfo.swift */,
 				D02DB8BA24642FD600565A18 /* JsonFiles */,
 				D0DDC43A23D5BD5B0075F294 /* View */,
 				D0DDC40423D58DB30075F294 /* AppDelegate.swift */,
@@ -451,12 +457,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2030E502464EE47000008D0 /* ALDownloadInfo.swift in Sources */,
 				D06788C023E96129000EEFB1 /* UIView+Extensions.swift in Sources */,
 				D0DDC40923D58DB30075F294 /* ViewController.swift in Sources */,
 				D0DDC40523D58DB30075F294 /* AppDelegate.swift in Sources */,
 				AB412EC223D5CEE400724C5A /* FooterView.swift in Sources */,
 				D09BF95B23D9807600BE4B0D /* Model.swift in Sources */,
 				D0DDC40723D58DB30075F294 /* SceneDelegate.swift in Sources */,
+				F2030E522464EF60000008D0 /* AlamofireExtension.swift in Sources */,
 				D0DDC43623D58E340075F294 /* DownloadEntryViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

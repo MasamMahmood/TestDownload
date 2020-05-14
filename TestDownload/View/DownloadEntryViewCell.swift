@@ -7,6 +7,11 @@
 import UIKit
 
 class DownloadEntryViewCell: UITableViewCell {
+    
+   
+    
+    
+    
     @IBOutlet weak var rightView: UIView!
     @IBOutlet weak var leftView: UIView!
     
@@ -34,5 +39,6 @@ class DownloadEntryViewCell: UITableViewCell {
         }
     }
        
+
 }
 

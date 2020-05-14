@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -43,7 +43,7 @@
                             <color key="textColor" red="0.2332891822" green="0.28437167410000003" blue="0.38401141760000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="89J-r3-80Z">
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="89J-r3-80Z">
                             <rect key="frame" x="75" y="28" width="278" height="2"/>
                             <color key="tintColor" red="0.3294117647" green="0.65490196079999996" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
@@ -103,9 +103,11 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="downloadLbl" destination="Gii-9C-IbY" id="Rg0-Qy-kn0"/>
                 <outlet property="footerProgress" destination="89J-r3-80Z" id="5BV-gV-MgU"/>
                 <outlet property="mainView" destination="6wH-tN-meh" id="FiU-gJ-z7n"/>
                 <outlet property="projName" destination="L3y-pm-psE" id="Hci-WC-6fh"/>
+                <outlet property="tipView" destination="Icy-hn-xw8" id="ALt-EH-3DS"/>
             </connections>
             <point key="canvasLocation" x="215.21739130434784" y="379.35267857142856"/>
         </view>

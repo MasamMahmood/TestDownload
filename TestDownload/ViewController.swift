@@ -19,14 +19,43 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var selectedIndex : Int! = -1
     var downloadSpeed: Double = 0.0
     
+    
+    lazy var startBtn: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("start", for: .normal)
+        btn.setTitleColor(.white, for: .normal)
+        btn.backgroundColor = UIColor.black
+        return btn
+    }()
+    
+    
+    var downloadInfos = [ALDownloadInfo]()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.addSubview(startBtn)
+        startBtn.frame = CGRect(x: 50, y: 30, width: 100, height: 30)
+        startBtn.addTarget(self, action: #selector(didStartBtn), for: .touchUpInside)
+        
         tableView.dataSource = self
         tableView.delegate = self
         let nib = UINib.init(nibName: "DownloadEntryViewCell", bundle: nil)
         self.tableView.register(nib, forCellReuseIdentifier: "DownloadEntryViewCell")
         pullData()
 
+    }
+    
+    
+    @objc
+    func didStartBtn() {
+        print("didStartBtn")
+        downloadInfos.forEach { (info) in
+            print("download")
+            info.download()
+        }
+        
     }
     
     // MARK: - Data Services. 
@@ -65,8 +94,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     for item in param.items! {
                         
                         if item.actionType == 2 {
-                            let filename = item.actionUrl ?? ""
-                            self.downloadPDFTask(pdfURL: item.actionUrl ?? "")
+//                            let filename = item.actionUrl ?? ""
+                            let url = item.actionUrl ?? ""
+                            let filename = item.textField ?? ""
+                            
+                            downloadInfos.append(ALDownloadInfo(url: url, name: filename))
+                            
+
                         }
                     }
                 }
@@ -78,52 +112,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    func downloadPDFTask(pdfURL: String) {
-                 
-            self.downloadFile(url: pdfURL, filetype: ".pdf", callback: { success, response in
 
-            if !success || response == nil {
-                return false
-            }
-            return true
-        })
-        
-    }
-    
-    // MARK:- Download Alamofire Function
-    
-    @objc public func downloadFile(url:String, filetype: String, callback:@escaping (_ success:Bool, _ result:Any?)->(Bool)) -> Void {
-        var destination = DownloadRequest.suggestedDownloadDestination(for: .documentDirectory)
-        if filetype.elementsEqual(".pdf"){
-            destination = { _, _ in
-                let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-                let downloadFileName = url
-                let fileURL = documentsURL.appendingPathComponent("\(downloadFileName).pdf")
-                return (fileURL, [.removePreviousFile, .createIntermediateDirectories])
-            }
-        }
-
-        Alamofire.download(
-            url,
-            method: .get,
-            parameters: nil,
-            encoding: JSONEncoding.default,
-            headers: nil,
-            to: destination).downloadProgress(closure: { (progress) in
-                
-                print(progress)
-                print(progress.fractionCompleted)
-                self.downloadSpeed = progress.fractionCompleted
-                print(self.downloadSpeed)
-                
-            }).response(completionHandler: { (DefaultDownloadResponse) in
-                callback(DefaultDownloadResponse.response?.statusCode == 200, DefaultDownloadResponse.destinationURL?.path)
-                print(DefaultDownloadResponse)
-                
-            })
-    }
-
-    
     // MARK: - TableView Delegates
     
     
@@ -152,7 +141,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 1 //Appdata?.count  ?? 0
+        return 2 //Appdata?.count  ?? 0
     }
     
     
@@ -162,18 +151,46 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         var stackHeight:CGFloat = 0.0
         cell.fileNameLabel.text = dic?.date
         
+
         for i in Appdata ?? [] {
             let child_view = Bundle.main.loadNibNamed("FooterView", owner: self, options: nil)?.first as! FooterView
-            child_view.projName.text = "\(i.projectName ?? "")" + "  " + "\(i.subTitle ?? "")"
-            
+            for j in downloadInfos {
+            child_view.projName.text = i.projectName
+            child_view.model = j
+            child_view.model.stateChangeBlock = { [weak self] state in
+                guard let weakself = self else {
+                    return
+                }
+                print("stateChangeBlock == \(state)")
+                if state == .Completed {
+                    
+                    
+                    child_view.tipView.backgroundColor = child_view.footerProgress.tintColor
+                     print("stateChangeBlock == \(state)")
+                    let completeInfos = weakself.downloadInfos.filter{$0.state == ALDownloadState.Completed}
+                    print( Float(completeInfos.count/weakself.downloadInfos.count))
+                    cell.individualProgress.progress = Float(completeInfos.count)/Float(weakself.downloadInfos.count)
+                    cell.progressLabel.text = "\( Float(completeInfos.count)/Float(weakself.downloadInfos.count)*100)"
+                    cell.downloadURLLabel.text = "Downloading(\(Float(completeInfos.count)/Float(weakself.downloadInfos.count)))"
+                    
+                }
+               
+            }
+            let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+            child_view.mainView.addGestureRecognizer(tap)
+                child_view.mainView.isUserInteractionEnabled = true
             cell.stackViewFooter.addArrangedSubview(child_view)
             stackHeight = stackHeight + 60.0
-            
+            }
         }
         cell.stackViewFooter.heightAnchor.constraint(equalToConstant: stackHeight).isActive = true
         return cell
     }
     
+    @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
+        // handling code
+        print("Tap working")
+    }
     
 }
 
